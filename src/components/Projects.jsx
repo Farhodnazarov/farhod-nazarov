@@ -2,6 +2,7 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+import { motion, scale } from "framer-motion";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -60,7 +61,13 @@ export default function Projects() {
   ];
 
   return (
-    <div className="container mx-auto w-full bg-black py-16 text-white">
+    <motion.div
+      initial={{ scale: 0.5, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      viewport={{ once: false }}
+      transition={{ duration: 1 }}
+      className="container mx-auto w-full bg-black py-16 text-white"
+    >
       {/* Title */}
       <h2 className="mb-10 ml-20 font-serif text-4xl lg:text-6xl">Projects</h2>
 
@@ -124,6 +131,6 @@ export default function Projects() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </motion.div>
   );
 }
