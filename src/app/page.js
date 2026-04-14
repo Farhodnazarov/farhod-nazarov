@@ -18,16 +18,13 @@ export default function Home() {
         >
           <source src="/black-wave-bg-vd.mp4" type="video/mp4" />
         </video>
-
         {/* OVERLAY (optional for readability) */}
         <div className="absolute inset-0 bg-black/40"></div>
-
         {/* CONTENT */}
         <div className="relative z-10 flex min-h-screen flex-col">
           <Navbar />
           <Hero />
         </div>
-
         {/* BOTTOM BLUR */}
         <div className="pointer-events-none absolute bottom-0 h-20 w-full backdrop-blur-[2px]" />
       </div>
