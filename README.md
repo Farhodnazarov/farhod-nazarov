@@ -34,3 +34,46 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+<!-- 
+--- 1. 🏠 Home (Landing)
+Ism + kasb (Frontend Developer)
+Qisqa bio (1-2 gap)
+CTA:
+“View Projects”
+“Contact me”
+Background animatsiya (Framer Motion)
+--- 2. 👨‍💻 About
+Siz haqingizda batafsil
+Tech stack:
+React
+Next.js
+TypeScript
+Redux Toolkit
+Tajriba (2.5 yil)
+Rasmingiz (optional)
+--- 3. 🛠 Skills
+Progress bar yoki animated cards
+Texnologiyalar:
+HTML / CSS / Tailwind
+JS / TS
+React / Next
+Hover animation
+--- 4. 📂 Projects
+Har bir project card:
+Title
+Screenshot
+Stack
+Live link
+GitHub link
+Filter (React / Fullstack / UI)
+--- 5. 📞 Contact
+Email
+Telegram
+Form (EmailJS yoki oddiy mailto)
+Social links
+--- 6. 🎨 Qo‘shimcha
+Dark / Light mode
+Smooth scroll
+Animations (Framer Motion)
+Responsive design -->
