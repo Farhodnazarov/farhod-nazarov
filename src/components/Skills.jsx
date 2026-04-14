@@ -36,7 +36,7 @@ export default function Skills() {
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 1 }}
       id="skills"
-      className="group relative mx-4 my-6 w-full cursor-pointer overflow-hidden rounded-2xl border border-white/30 bg-[#1D1928] p-5 sm:mx-6 lg:mr-4 lg:ml-0 lg:h-96 lg:w-[30%]"
+      className="group relative mx-4 my-6 w-full cursor-pointer scroll-mt-32 overflow-hidden rounded-2xl border border-white/30 bg-[#1D1928] p-5 sm:mx-6 lg:mr-4 lg:ml-0 lg:h-96 lg:w-[30%]"
     >
       {/* 🔥 GREEN BORDER */}
       <div
@@ -58,6 +58,7 @@ export default function Skills() {
           background: `radial-gradient(220px circle at var(--x) var(--y), rgba(66, 245, 224,0.3), transparent 20%)`,
         }}
       ></div>
+      <p className="mb-3 font-serif text-4xl font-semibold">{t("Skills")}</p>
 
       <motion.ul
         initial={{ scale: 0.5, opacity: 0 }}
@@ -65,10 +66,6 @@ export default function Skills() {
         transition={{ duration: 1 }}
         className="lg:scrollbar-hide flex flex-wrap gap-4 lg:h-80 lg:flex-col lg:flex-nowrap lg:overflow-y-scroll"
       >
-        <li className="mb-3 font-serif text-4xl font-semibold">
-          {t("Skills")}
-        </li>
-
         {mySkills.map((skill, i) => (
           <li
             key={i}
