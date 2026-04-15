@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
 
 export default function Projects() {
   const { t } = useTranslation();
@@ -62,6 +63,20 @@ export default function Projects() {
     },
   ];
 
+  const getDescription = (key) => {
+    const keys = [
+      "tipCalculator",
+      "devfinder",
+      "furniture",
+      "quiz",
+      "myKitchen",
+      "randomUser",
+      "trandSolution",
+      "myTodoApp",
+    ];
+    return keys.includes(key) ? t(key) : "";
+  };
+
   return (
     <motion.div
       id="projects"
@@ -71,7 +86,6 @@ export default function Projects() {
       transition={{ duration: 1 }}
       className="container mx-auto w-full bg-black py-16 text-white"
     >
-      {/* Title */}
       <h2 className="mb-10 ml-20 font-serif text-4xl lg:text-6xl">Projects</h2>
 
       <Swiper
@@ -100,50 +114,37 @@ export default function Projects() {
             key={index}
             className="!w-[260px] sm:!w-[280px] md:!w-[300px]"
           >
-            <div className="flex h-full min-h-[360px] flex-col overflow-hidden rounded-xl border border-white/20 bg-zinc-900 shadow-lg">
+            <div className="flex h-[420px] flex-col overflow-hidden rounded-xl border border-white/20 bg-zinc-900 shadow-lg">
               {/* Image */}
               <img
                 src={project.image}
                 alt={project.name}
-                className="w-full object-cover"
+                className="h-[180px] w-full object-cover"
               />
 
               {/* Content */}
               <div className="flex flex-1 flex-col p-4">
                 <h3 className="text-lg font-bold">{project.name}</h3>
                 <p className="mt-1 line-clamp-2 text-sm text-gray-400">
-                  {project.description == "tipCalculator"
-                    ? t("tipCalculator")
-                    : project.description == "devfinder"
-                      ? t("devfinder")
-                      : project.description == "furniture"
-                        ? t("furniture")
-                        : project.description == "quiz"
-                          ? t("quiz")
-                          : project.description == "myKitchen"
-                            ? t("myKitchen")
-                            : project.description == "randomUser"
-                              ? t("randomUser")
-                              : project.description == "trandSolution"
-                                ? t("trandSolution")
-                                : project.description == "myTodoApp"
-                                  ? t("myTodoApp")
-                                  : ""}
+                  {getDescription(project.description)}
                 </p>
 
                 {/* Buttons */}
                 <div className="mt-auto flex gap-3 pt-4">
-                  <a
+                  <Link
                     href={project.vercelLink}
                     target="_blank"
                     className="rounded-md bg-white px-3 py-1 text-sm text-black hover:opacity-80"
                   >
                     Live
-                  </a>
+                  </Link>
 
-                  <button className="cursor-pointer rounded-md border border-white px-3 py-1 text-sm transition hover:bg-white hover:text-black">
+                  <Link
+                    href={`/singleProject/${project.description}`}
+                    className="cursor-pointer rounded-md border border-white px-3 py-1 text-sm transition hover:bg-white hover:text-black"
+                  >
                     Learn More
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

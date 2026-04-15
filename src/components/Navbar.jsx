@@ -17,7 +17,7 @@ export default function Navbar() {
 
   const languages = [
     { label: "English", code: "en" },
-    { label: "Russia", code: "ru" },
+    { label: "Russian", code: "ru" },
     { label: "Uzbek", code: "uz" },
   ];
 
@@ -68,7 +68,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between px-4 py-2 sm:px-6 lg:px-14">
         {/* LOGO */}
-        <img className="w-20 sm:w-24" src="./dark-mode-fn.png" />
+        <img className="w-20 sm:w-24" src="../dark-mode-fn.png" />
 
         {/* LANGUAGE */}
         <LanguageSelect
