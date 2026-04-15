@@ -56,13 +56,19 @@ export default function Hero() {
           viewport={{ once: false }}
           className="mt-6 flex flex-col gap-3 sm:flex-row sm:gap-5"
         >
-          <button className="cursor-pointer rounded-xl border border-white/30 bg-gradient-to-r from-white/80 via-cyan-400 to-white/80 px-5 py-2 text-sm font-medium text-black shadow-lg shadow-cyan-400/30 backdrop-blur-md transition hover:scale-105 sm:px-6 sm:py-3 sm:text-base">
+          <a
+            href="#projects"
+            className="cursor-pointer rounded-xl border border-white/30 bg-gradient-to-r from-white/80 via-cyan-400 to-white/80 px-5 py-2 text-sm font-medium text-black shadow-lg shadow-cyan-400/30 backdrop-blur-md transition hover:scale-105 sm:px-6 sm:py-3 sm:text-base"
+          >
             {t("ViewProjects")}
-          </button>
+          </a>
 
-          <button className="cursor-pointer rounded-xl border border-white/20 bg-white/5 px-5 py-2 text-sm font-medium text-white backdrop-blur-md transition hover:border-white/40 hover:bg-white/10 sm:px-6 sm:py-3 sm:text-base">
+          <a
+            href="#contact"
+            className="cursor-pointer rounded-xl border border-white/20 bg-white/5 px-5 py-2 text-sm font-medium text-white backdrop-blur-md transition hover:border-white/40 hover:bg-white/10 sm:px-6 sm:py-3 sm:text-base"
+          >
             {t("ContactMe")}
-          </button>
+          </a>
         </motion.div>
       </div>
     </motion.div>

@@ -26,8 +26,7 @@ export default function About() {
       initial={{ x: -250, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 1 }}
-      id="about"
-      className="group relative mx-4 my-6 flex w-full cursor-pointer scroll-mt-32 flex-col items-center justify-center gap-6 overflow-hidden rounded-2xl border border-white/30 bg-[#1D1928] p-6 sm:mx-6 sm:p-8 lg:mx-0 lg:ml-4 lg:h-96 lg:w-[70%] lg:flex-row lg:gap-10 lg:p-10"
+      className="group relative mx-4 my-6 flex w-full cursor-pointer flex-col items-center justify-center gap-6 overflow-hidden rounded-2xl border border-white/30 bg-[#1D1928] p-6 sm:mx-6 sm:p-8 lg:mx-0 lg:ml-4 lg:h-96 lg:w-[70%] lg:flex-row lg:gap-10 lg:p-10"
     >
       {/* 🔥 GREEN BORD */}
       <div

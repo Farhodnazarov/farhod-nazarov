@@ -2,59 +2,61 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
-import { motion, scale } from "framer-motion";
+import { motion } from "framer-motion";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
+  const { t } = useTranslation();
   const projects = [
     {
       name: "Tip Calculator",
-      description: "This is my first project",
+      description: "tipCalculator",
       image: "/tip-caculator.png",
       vercelLink: "https://calculator-of-tip.vercel.app/",
     },
     {
       name: "Devfinder",
-      description: "Second amazing project",
+      description: "devfinder",
       image: "/devfinder.png",
       vercelLink: "https://devfinder-pink-pi.vercel.app/",
     },
     {
       name: "Furniture",
-      description: "Cool UI project",
+      description: "furniture",
       image: "furnitures.png",
       vercelLink: "https://furniture-five-ashy.vercel.app/",
     },
     {
       name: "Quiz",
-      description: "queiz",
+      description: "quiz",
       image: "/queiz.png",
       vercelLink: "https://farhod-s-quiz.vercel.app/",
     },
     {
       name: "My Kitchen",
-      description: "Portfolio website",
+      description: "myKitchen",
       image: "/my-kitchen.png",
       vercelLink: "https://my-kitchen-five.vercel.app/",
     },
     {
       name: "Random User",
-      description: "Portfolio website",
+      description: "randomUser",
       image: "/random-user.png",
       vercelLink: "https://random-user-ashen-chi.vercel.app/",
     },
     {
       name: "Trand Solution",
-      description: "Portfolio website",
+      description: "trandSolution",
       image: "/trand-solution.png",
       vercelLink: "https://trend-solution-chi.vercel.app",
     },
     {
       name: "My Todo App",
-      description: "Portfolio website",
+      description: "myTodoApp",
       image: "/my-todo.png",
       vercelLink: "https://my-todo-list-iota-black.vercel.app",
     },
@@ -62,6 +64,7 @@ export default function Projects() {
 
   return (
     <motion.div
+      id="projects"
       initial={{ scale: 0.5, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
       viewport={{ once: false }}
@@ -102,14 +105,30 @@ export default function Projects() {
               <img
                 src={project.image}
                 alt={project.name}
-                className="h-[160px] w-full object-cover sm:h-[180px]"
+                className="w-full object-cover"
               />
 
               {/* Content */}
               <div className="flex flex-1 flex-col p-4">
                 <h3 className="text-lg font-bold">{project.name}</h3>
-                <p className="mt-1 line-clamp-3 text-sm text-gray-400">
-                  {project.description}
+                <p className="mt-1 line-clamp-2 text-sm text-gray-400">
+                  {project.description == "tipCalculator"
+                    ? t("tipCalculator")
+                    : project.description == "devfinder"
+                      ? t("devfinder")
+                      : project.description == "furniture"
+                        ? t("furniture")
+                        : project.description == "quiz"
+                          ? t("quiz")
+                          : project.description == "myKitchen"
+                            ? t("myKitchen")
+                            : project.description == "randomUser"
+                              ? t("randomUser")
+                              : project.description == "trandSolution"
+                                ? t("trandSolution")
+                                : project.description == "myTodoApp"
+                                  ? t("myTodoApp")
+                                  : ""}
                 </p>
 
                 {/* Buttons */}

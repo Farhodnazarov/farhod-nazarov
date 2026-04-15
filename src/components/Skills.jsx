@@ -35,8 +35,7 @@ export default function Skills() {
       initial={{ x: 250, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 1 }}
-      id="skills"
-      className="group relative mx-4 my-6 w-full cursor-pointer scroll-mt-32 overflow-hidden rounded-2xl border border-white/30 bg-[#1D1928] p-5 sm:mx-6 lg:mr-4 lg:ml-0 lg:h-96 lg:w-[30%]"
+      className="group relative mx-4 my-6 w-full cursor-pointer overflow-hidden rounded-2xl border border-white/30 bg-[#1D1928] p-5 sm:mx-6 lg:mr-4 lg:ml-0 lg:h-96 lg:w-[30%]"
     >
       {/* 🔥 GREEN BORDER */}
       <div
