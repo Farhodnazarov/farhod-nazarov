@@ -26,7 +26,7 @@ export default function About() {
       initial={{ x: -250, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 1 }}
-      className="group relative mx-4 my-6 flex w-full cursor-pointer flex-col items-center justify-center gap-6 overflow-hidden rounded-2xl border border-white/30 bg-[#1D1928] p-6 sm:mx-6 sm:p-8 lg:mx-0 lg:ml-4 lg:h-[450px] lg:w-[70%] lg:flex-row lg:gap-10 lg:p-10"
+      className="group relative mx-4 my-6 flex w-full cursor-pointer flex-col items-center justify-center gap-6 overflow-hidden rounded-2xl border border-white/30 bg-[#1D1928] p-6 sm:mx-6 sm:p-8 lg:mx-0 lg:ml-4 lg:h-[400px] lg:w-[70%] lg:flex-row lg:gap-10 lg:p-10"
     >
       {/* 🔥 GREEN BORD */}
       <div
@@ -63,9 +63,9 @@ export default function About() {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <p className="mb-3 font-serif text-4xl font-semibold">{t("About")}</p>
+        <p className="mb-3 font-serif text-3xl font-semibold">{t("About")}</p>
 
-        <p className="text-center leading-4 sm:text-sm md:text-base md:leading-5 lg:text-left">
+        <p className="text-center !text-[12px] leading-4 md:text-base md:leading-[19px] lg:text-left">
           {t("AboutMe")}
         </p>
       </motion.div>
