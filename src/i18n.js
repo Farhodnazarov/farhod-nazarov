@@ -48,6 +48,26 @@ const resources = {
       // Single Project buttons
       back: "Back",
       live: "Live",
+      // Contact with me text
+      contactText:
+        "I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision. If you have any questions or would like to work together, feel free to reach out. I’ll do my best to respond as soon as possible. Let’s build something great together!",
+      contactTitle: "Contact Me :",
+      // Contact Form
+      contactInputName: "Enter Your Name",
+      contactInputCompanyName: "Enter Your Company Name",
+      contactInputEmail: "Enter Your Email",
+      contactInputMessage: "Write me your opinion",
+      contactLabelName: "Name",
+      contactLabelCompanyName: "Company Name",
+      contactLabelEmail: "Email Address",
+      contactLabelMessage: "Message",
+      contactButton: "Send",
+      contactButtonSendding: "Sending...",
+      // Contact Form Validate
+      nameValidate: "Enter your name ❌",
+      companyNameValidate: "Enter company name ❌",
+      emailValidate: "Enter email address ❌",
+      messageValidate: "Enter a message ❌",
     },
   },
 
@@ -95,6 +115,26 @@ const resources = {
       // Single Project buttons
       back: "Назад",
       live: "Посмотреть проект",
+      // Contact with me text
+      contactText:
+        "Я всегда открыт к обсуждению новых проектов, креативных идей и возможностей стать частью вашей команды. Если у вас есть вопросы или вы хотите сотрудничать — смело пишите. Я постараюсь ответить как можно быстрее. Давайте создавать что-то крутое вместе!",
+      contactTitle: "Связаться со мной :",
+      // Contact Form
+      contactInputName: "Введите ваше имя",
+      contactInputCompanyName: "Введите название компании",
+      contactInputEmail: "Введите ваш email",
+      contactInputMessage: "Напишите ваше мнение",
+      contactLabelName: "Имя",
+      contactLabelCompanyName: "Название компании",
+      contactLabelEmail: "Электронная почта",
+      contactLabelMessage: "Сообщение",
+      contactButton: "Отправить",
+      contactButtonSending: "Отправка...",
+      // Contact Form Validate
+      nameValidate: "Введите имя ❌",
+      companyNameValidate: "Введите название компании ❌",
+      emailValidate: "Введите адрес электронной почты ❌",
+      messageValidate: "Введите сообщение ❌",
     },
   },
 
@@ -142,6 +182,25 @@ const resources = {
       // Single Project buttons
       back: "Ortga",
       live: "Loyihani ko‘rish",
+      // Contact with me text
+      contactText: `Men har doim yangi loyihalar, kreativ g‘oyalar yoki sizning loyihangizning bir qismi bo‘lish imkoniyatlarini muhokama qilishga ochiqman. Agar sizda savollar bo‘lsa yoki hamkorlik qilishni istasangiz, bemalol murojaat qiling. Imkon qadar tezroq javob berishga harakat qilaman. Keling, birgalikda ajoyib loyihalar yarataylik!`,
+      contactTitle: "Bog'lanish :",
+      // Contact Form
+      contactInputName: "Ismingizni kiriting",
+      contactInputCompanyName: "Kompaniya nomini kiriting",
+      contactInputEmail: "Email manzilingizni kiriting",
+      contactInputMessage: "Fikringizni yozing",
+      contactLabelName: "Ism",
+      contactLabelCompanyName: "Kompaniya nomi",
+      contactLabelEmail: "Email manzil",
+      contactLabelMessage: "Xabar",
+      contactButton: "Yuborish",
+      contactButtonSending: "Yuborilmoqda...",
+      // Contact Form Validate
+      nameValidate: "Ism kiriting ❌",
+      companyNameValidate: "Kompaniya nomini kiriting ❌",
+      emailValidate: "Email manzil kiriting ❌",
+      messageValidate: "Xabar yozing ❌",
     },
   },
 };

@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
@@ -33,6 +34,13 @@ export default function Home() {
         <Skills />
       </div>
       <Projects />
+      <div id="contact">
+        <Contact />
+      </div>
+      {/* Footer */}
+      <p className="mt-6 p-10 text-center text-[10px] text-zinc-500 sm:mt-10 sm:text-xs">
+        One of Farhod’s portfolio projects
+      </p>
     </div>
   );
 }
