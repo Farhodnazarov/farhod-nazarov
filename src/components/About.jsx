@@ -53,7 +53,7 @@ export default function About() {
         initial={{ y: -50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        src="./me.jpg"
+        src="../me.jpg"
         alt="Photo"
         className="w-40 rounded-[30px] shadow-[4px_4px_50px_7px_rgba(255,255,255,0.2)] sm:w-56 md:w-64 lg:w-80 lg:rounded-[40px]"
       />
