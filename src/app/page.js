@@ -7,10 +7,10 @@ import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <div className="min-h-screen overflow-hidden bg-black text-white">
-      <div className="relative h-[600px] w-full overflow-hidden">
+      <div className="overflow h-[550px]-hidden relative w-full sm:h-[600px] lg:h-[750px]">
         {/* VIDEO */}
         <video
-          className="absolute inset-0 h-[600px] w-full object-cover"
+          className="absolute inset-0 h-[550px] w-full object-cover sm:h-[600px] lg:h-[750px]"
           autoPlay
           muted
           loop
