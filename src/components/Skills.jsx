@@ -3,20 +3,33 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 export default function Skills() {
   const { t } = useTranslation();
   const cardRef = useRef(null);
 
   const mySkills = [
-    { name: "React", img: "/react.jpg" },
-    { name: "Next.js", img: "/imgNext.png" },
-    { name: "Tailwind", img: "/tailwind.png" },
-    { name: "JavaScript", img: "/js.png" },
-    { name: "TypeScript", img: "/ts.png" },
-    { name: "Node.js", img: "/node.png" },
-    { name: "Git", img: "/git.svg" },
-    { name: "Git Hub", img: "/gitHub.png" },
+    { name: "React", img: "/react.jpg", link: "https://react.dev/" },
+    { name: "Next.js", img: "/imgNext.png", link: "https://nextjs.org/" },
+    {
+      name: "Tailwind",
+      img: "/tailwind.png",
+      link: "https://tailwindcss.com/",
+    },
+    {
+      name: "JavaScript",
+      img: "/js.png",
+      link: "https://www.youtube.com/watch?v=zJuDsji3IbE&list=PLNS3PujVHR-ay0HpqbsPWccgEhJZk6K9u",
+    },
+    {
+      name: "TypeScript",
+      img: "/ts.png",
+      link: "https://www.typescriptlang.org/",
+    },
+    { name: "Node.js", img: "/node.png", link: "https://nodejs.org/en" },
+    { name: "Git", img: "/git.svg", link: "https://git-scm.com/" },
+    { name: "Git Hub", img: "/gitHub.png", link: "https://github.com" },
   ];
 
   const handleMouseMove = (e) => {
@@ -63,19 +76,22 @@ export default function Skills() {
         initial={{ scale: 0.5, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="lg:scrollbar-hide flex flex-wrap gap-4 lg:h-80 lg:flex-col lg:flex-nowrap lg:overflow-y-scroll"
+        className="lg:scrollbar-hide flex flex-wrap gap-4 pb-10 lg:h-80 lg:flex-col lg:flex-nowrap lg:overflow-y-scroll"
       >
         {mySkills.map((skill, i) => (
-          <li
-            key={i}
-            className="flex w-[45%] flex-col items-center justify-center gap-2 rounded-xl bg-white/5 p-3 text-center backdrop-blur-md transition hover:bg-white/10 sm:w-[30%] lg:w-full lg:flex-row lg:justify-start lg:gap-4 lg:text-left"
-          >
-            <img
-              src={skill.img}
-              alt={skill.name}
-              className="h-10 w-10 object-contain"
-            />
-            <p className="text-xs sm:text-sm md:text-base">{skill.name}</p>
+          <li key={i}>
+            <Link
+              target="_blank"
+              className="flex w-[45%] flex-col items-center justify-center gap-2 rounded-xl bg-white/5 p-3 text-center backdrop-blur-md transition hover:bg-white/10 sm:w-[30%] lg:w-full lg:flex-row lg:justify-start lg:gap-4 lg:text-left"
+              href={skill.link}
+            >
+              <img
+                src={skill.img}
+                alt={skill.name}
+                className="h-10 w-10 object-contain"
+              />
+              <p className="text-xs sm:text-sm md:text-base">{skill.name}</p>
+            </Link>
           </li>
         ))}
       </motion.ul>

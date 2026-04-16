@@ -106,7 +106,7 @@ export default function Projects() {
           slideShadows: true,
         }}
         pagination={{ clickable: true }}
-        modules={[EffectCoverflow, Pagination, Autoplay]}
+        modules={[EffectCoverflow, Autoplay]}
         className="w-full"
       >
         {projects.map((project, index) => (

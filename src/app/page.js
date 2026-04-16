@@ -7,10 +7,10 @@ import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <div className="min-h-screen overflow-hidden bg-black text-white">
-      <div className="relative min-h-screen w-full overflow-hidden">
+      <div className="relative h-[600px] w-full overflow-hidden">
         {/* VIDEO */}
         <video
-          className="absolute inset-0 h-[500px] w-full object-cover lg:h-[600px]"
+          className="absolute inset-0 h-[600px] w-full object-cover"
           autoPlay
           muted
           loop
@@ -21,12 +21,12 @@ export default function Home() {
         {/* OVERLAY (optional for readability) */}
         <div className="absolute inset-0 bg-black/40"></div>
         {/* CONTENT */}
-        <div className="relative z-10 flex min-h-screen flex-col">
+        <div className="relative z-10 flex flex-col">
           <Navbar />
           <Hero />
         </div>
         {/* BOTTOM BLUR */}
-        <div className="pointer-events-none absolute bottom-0 h-20 w-full backdrop-blur-[2px]" />
+        <div className="pointer-events-none absolute bottom-0 h-10 w-full backdrop-blur-[2px]" />
       </div>
       <div className="container mx-auto flex flex-col items-center justify-center gap-5 lg:flex-row">
         <About />
