@@ -81,12 +81,12 @@ export default function SingleProject() {
         {/* Back Button */}
         <Link
           href="/"
-          className="mt-10 mb-6 inline-flex items-center gap-2 text-xs text-zinc-400 transition hover:text-white sm:mb-8 sm:text-sm lg:mt-14"
+          className="mt-10 mb-6 hidden items-center gap-2 text-xs text-zinc-400 transition hover:text-white sm:mb-8 sm:text-sm lg:mt-14 lg:inline-flex"
         >
           ← {t("back")}
         </Link>
 
-        <div className="overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/80 shadow-xl backdrop-blur-xl sm:rounded-3xl sm:shadow-2xl">
+        <div className="mt-16 overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/80 shadow-xl backdrop-blur-xl sm:rounded-3xl sm:shadow-2xl lg:mt-0">
           {/* IMAGE (BALANDLIK OSHIRILDI) */}
           <div className="relative aspect-[16/10] max-h-[300px] w-full overflow-hidden sm:aspect-video sm:max-h-[420px] md:max-h-[450px]">
             <img
