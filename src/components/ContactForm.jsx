@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { toast } from "sonner";
+import { motion } from "framer-motion";
 
 function ContactForm() {
   const { t } = useTranslation();
@@ -101,8 +102,12 @@ ${formData.message}
   };
 
   return (
-    <div className="w-full px-4 sm:px-8 md:px-14 lg:w-[50%]">
-      <form
+    <div className="flex w-full px-4 sm:px-8 md:px-14 lg:w-[50%]">
+      <motion.form
+        initial={{ x: 250, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: false }}
         onSubmit={handleSubmit}
         className="flex w-full flex-col gap-4 rounded-2xl bg-gray-900 p-4 text-black shadow-xl sm:p-6 md:p-8"
       >
@@ -177,7 +182,7 @@ ${formData.message}
         >
           {loading ? t("contactButtonSending") : t("contactButton")}
         </button>
-      </form>
+      </motion.form>
     </div>
   );
 }

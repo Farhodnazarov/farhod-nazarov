@@ -27,14 +27,14 @@ export default function Home() {
           <Hero />
         </div>
         {/* BOTTOM BLUR */}
-        <div className="pointer-events-none absolute bottom-0 h-10 w-full backdrop-blur-[2px]" />
+        <div className="pointer-events-none absolute bottom-0 hidden h-10 w-full backdrop-blur-[2px] lg:block" />
       </div>
       <div className="container mx-auto flex flex-col items-center justify-center gap-5 lg:flex-row">
         <About />
         <Skills />
       </div>
       <Projects />
-      <div id="contact">
+      <div id="contact" className="scroll-mt-14">
         <Contact />
       </div>
       {/* Footer */}

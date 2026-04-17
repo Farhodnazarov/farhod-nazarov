@@ -14,7 +14,7 @@ export default function Hero() {
       viewport={{ once: false }}
       className="relative z-10 container mx-auto px-4 sm:px-8 lg:px-14"
     >
-      <div className="mt-32 flex flex-col items-center justify-center pt-10 text-center">
+      <div className="my-20 flex flex-col items-center justify-center pt-10 text-center lg:mt-48">
         {/* NAME */}
         <motion.h1
           initial={{ y: 50, opacity: 0 }}
