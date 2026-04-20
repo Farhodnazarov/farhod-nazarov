@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { FaInstagram, FaGithub } from "react-icons/fa";
 import { RiTelegramLine } from "react-icons/ri";
-import { AiOutlineLinkedin, AiOutlineFacebook } from "react-icons/ai";
+import { AiOutlineLinkedin } from "react-icons/ai";
 
 export default function ContactLink() {
   const { t } = useTranslation();
@@ -43,7 +43,7 @@ export default function ContactLink() {
           <li>
             <Link
               href="https://www.instagram.com/farkhodnazarov_?igsh=ZnhiYnN4NXBhajVv&utm_source=qr"
-              className="text-2xl transition duration-300 hover:scale-110 hover:text-blue-500 sm:text-3xl lg:text-5xl"
+              className="text-3xl transition duration-300 hover:scale-110 hover:text-blue-500 lg:text-5xl"
               target="_blank"
             >
               <FaInstagram />
@@ -53,7 +53,7 @@ export default function ContactLink() {
           <li>
             <Link
               href="https://t.me/farhodweb"
-              className="text-2xl transition duration-300 hover:scale-110 hover:text-blue-500 sm:text-3xl lg:text-5xl"
+              className="text-3xl transition duration-300 hover:scale-110 hover:text-blue-500 lg:text-5xl"
               target="_blank"
             >
               <RiTelegramLine />
@@ -63,7 +63,7 @@ export default function ContactLink() {
           <li>
             <Link
               href="https://github.com/Farhodnazarov"
-              className="text-2xl transition duration-300 hover:scale-110 hover:text-blue-500 sm:text-3xl lg:text-5xl"
+              className="text-3xl transition duration-300 hover:scale-110 hover:text-blue-500 lg:text-5xl"
               target="_blank"
             >
               <FaGithub />
@@ -73,7 +73,7 @@ export default function ContactLink() {
           <li>
             <Link
               href="https://www.linkedin.com/in/farhod-nazarov-334510326/"
-              className="text-2xl transition duration-300 hover:scale-110 hover:text-blue-500 sm:text-3xl lg:text-5xl"
+              className="text-3xl transition duration-300 hover:scale-110 hover:text-blue-500 lg:text-5xl"
               target="_blank"
             >
               <AiOutlineLinkedin />
