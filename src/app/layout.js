@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
     >
       <head>
         <link rel="icon" type="image/svg+xml" href="/me.jpg" />
+        <title>Farhod Nazarov</title>
       </head>
       <body className="flex min-h-full flex-col select-none">
         {children}
