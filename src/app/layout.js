@@ -24,6 +24,9 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} scrollbar-hide h-full scroll-smooth antialiased`}
     >
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/me.jpg" />
+      </head>
       <body className="flex min-h-full flex-col select-none">
         {children}
         <Toaster richColors position="top-center" />
