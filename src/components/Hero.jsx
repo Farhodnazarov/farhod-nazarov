@@ -12,6 +12,7 @@ export default function Hero() {
       whileInView={{ scale: 1, opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: false }}
+      id="hero"
       className="relative z-10 container mx-auto px-4 sm:px-8 lg:px-14"
     >
       <div className="my-20 flex flex-col items-center justify-center pt-10 text-center lg:mt-48">

@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import i18n from "@/i18n";
 import LanguageSelect from "./LanguageSelect";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Navbar() {
   const { t } = useTranslation();
@@ -68,7 +69,10 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between px-4 py-2 sm:px-6 lg:px-14">
         {/* LOGO */}
-        <img className="w-20 sm:w-24" src="../dark-mode-fn.png" />
+        <Link href="#hero">
+          {" "}
+          <img className="w-20 sm:w-24" src="../dark-mode-fn.png" />
+        </Link>
 
         {/* LANGUAGE */}
         <LanguageSelect
